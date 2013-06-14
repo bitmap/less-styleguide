@@ -189,7 +189,7 @@ Multiple parameters with values should be separated on their own lines.
 
 ```css
 .mixin(
-    @color: #f00,
+    @color: #F00,
     @width: 100px
     ) {
     background: @color;
