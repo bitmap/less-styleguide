@@ -2,6 +2,16 @@
 
 This document outlines the basic CSS/LESS conventions we use here at WHS. This is an open document and everything is up for discussion/consideration. We have a tremendous amount of legacy code that does not adhere to these rules, and if you find yourself in one of those files it is in everyone's best interest to refactor it.
 
+## TOC
+
+1. [Organization](#organization)
+* [Indentation](#indentation)
+* [Selectors](#selectors)
+* [Properties](#properties)
+* [Variables](#variables)
+* [Mixins](#mixins)
+* [Stay Rad](#stay-rad)
+
 ## Organization
 
 You should include exactly one stylesheet on your page and no more. This base file should then import all dependancies and components. Components and styles for different sections should be contained in their own stylesheet and should not cross-pollinate. The home page styles directory, for example, contains the files `homepage.less` `layout.less` `featuredNews.less` `featuredVideo.less` `promoWeblets.less`
