@@ -1,10 +1,10 @@
 # LESS Style Guide
 
-This documnet outlines the basic CSS/LESS conventions we use here at WHS. This is an open document and everything is up for discussion/consideration. We have a tremendous amount of legacy code that does not adhere to these rules, and if you find yourself in one of those files it is in everyone's best interest to refactor it.
+This document outlines the basic CSS/LESS conventions we use here at WHS. This is an open document and everything is up for discussion/consideration. We have a tremendous amount of legacy code that does not adhere to these rules, and if you find yourself in one of those files it is in everyone's best interest to refactor it.
 
 ## Organization
 
-You should incude exactly one stylesheet on your page and no more. This base file should then import all dependancies and components. Components and styles for different sections should be continaed in their own stylesheet and should not cross-pollinate. The hompeage styles directory, for example, contains the files `homepage.less` `layout.less` `featuredNews.less` `featuredVideo.less` `promoWeblets.less`
+You should include exactly one stylesheet on your page and no more. This base file should then import all dependancies and components. Components and styles for different sections should be contained in their own stylesheet and should not cross-pollinate. The home page styles directory, for example, contains the files `homepage.less` `layout.less` `featuredNews.less` `featuredVideo.less` `promoWeblets.less`
 
 `homepage.less` is included on the page and imports the different components like this
 
@@ -43,7 +43,7 @@ HTML elements should be lowercase, of course. That said, avoid styling naked tag
 div, span {...}
 ```
 
-Put a space between selector and opening bracket and put the closing bracket on a seperate, non-indented line
+Put a space between selector and opening bracket and put the closing bracket on a separate, non-indented line
 
 ```css
 .class {
@@ -63,7 +63,7 @@ Return after each closing bracket
 }
 ```
 
-Put multiple selectors on seperate lines, seperated by commas
+Put multiple selectors on separate lines, separated by commas
 
 ```css
 .class1,
@@ -114,7 +114,7 @@ a:after {
 }
 ```
 
-CSS3 properties that support layering should on seperate lines, with the semi-colon on the last line
+CSS3 properties that support layering should on separate lines, with the semi-colon on the last line
 
 ```css
 .class {
@@ -152,7 +152,7 @@ Always add parenthesis to declare mixins. Mixins should be styled like selectors
 }
 ```
 
-Include mixins firsparenthesis when declaring mixins inside selectors
+Include mixins first when declaring mixins inside selectors
 
 ```css
 div {
@@ -177,7 +177,7 @@ Specify default parameters whenever possible.
 }
 ```
 
-When calling mixins, you do not need to specify the paremter name, just the value
+When calling mixins, you do not need to specify the parameter name, just the value
 
 ```css
 .class {
@@ -185,7 +185,7 @@ When calling mixins, you do not need to specify the paremter name, just the valu
 }
 ```
 
-Multiple parameters with values should be seperated on their own lines.
+Multiple parameters with values should be separated on their own lines.
 
 ```css
 .mixin(
@@ -234,10 +234,10 @@ __Make sure you're not redefining mixins that exist globally! Check components >
 * Use semantically descriptive classnames (`.orangeButton` is terrible)
 * Never nest deeper than three levels (The Inception Rule)
 * Never nest an ID within and ID
-* Avoid namespacing with element + class names unless it's a state rule (i.e., `div.class`)
+* Avoid name spacing with element + class names unless it's a state rule (i.e., `div.class`)
 * Don't repeat yourself, abstract patterns into reusable mixins and variables
 * Use shorthand whenever possible (`margin` instead of `margin-top` + `margin-right`, etc.)
 * group properties together (layout, fonts, background, prefixes, hacks)
-* Use the starhack `*property: value;` to easily target IE7
+* Use the star-hack `*property: value;` to easily target IE7
 * When importing LESS files, do not put .less extension (`@import 'component'`)
 * If you're doing something dumb, document why with a `//` comment
