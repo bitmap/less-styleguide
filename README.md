@@ -288,6 +288,8 @@ div {
 
 __Make sure you're not redefining mixins that exist globally! Check components > common.less__
 
+---
+
 ## Stay Rad
 
 * Don't use inline styles
